@@ -17,10 +17,13 @@ export default function Beer({ image_url, name, tagline, contributed_by }) {
           <div className="col-md-8">
             <div className="card-body Beer-data">
               <h5 className="card-title">{name}</h5>
-              <p className="card-text">{tagline}</p>
+              <p className="card-text text-muted">{tagline}</p>
               <p className="card-text">
                 <strong>
-                  <small className="text-muted">{contributed_by}</small>
+                  <small>
+                    <b>Created by:</b>{' '}
+                    <span className="text-muted">{contributed_by}</span>
+                  </small>
                 </strong>
               </p>
             </div>
