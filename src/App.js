@@ -1,10 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+import BeerList from './components/beerlist/BeerList'
+import axios from "axios";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <BeerList />
     </div>
   );
 }
