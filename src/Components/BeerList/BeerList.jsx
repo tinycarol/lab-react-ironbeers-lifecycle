@@ -21,13 +21,18 @@ class BeerList extends Component {
     }
 
     render() {
-        console.log(this.state.beers)
+        
         if(this.state.beers.length === 0) {
             return (
                 <div>
                     <p>Loading...</p>
                 </div>
             )
+        }
+
+        const createdBy = (author) => {
+            let authorArr = author.split("<")
+            return authorArr[0]
         }
 
         return (
@@ -40,6 +45,7 @@ class BeerList extends Component {
                                 <div class="beerInfo">
                                     <h1>{beer.name}</h1>
                                     <h3>{beer.tagline}</h3>
+                                    <p>Created by: {createdBy(beer.contributed_by)}</p>
                                 </div>
                             </div>
                             <hr/>
