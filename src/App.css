@@ -1,3 +1,14 @@
 .App {
   text-align: center;
 }
+
+.blue-header {
+  background-color: #44c4fc;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.blue-header img {
+  width: 30px;
+  margin-top: 10px;
+}
