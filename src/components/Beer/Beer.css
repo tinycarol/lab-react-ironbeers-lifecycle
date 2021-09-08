@@ -1,0 +1,23 @@
+.Beer {
+  width: 600px;
+
+}
+
+.Beer img {
+  height: 250px;
+  width: 120px;
+  padding: 1.5em;
+}
+
+.beer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
