@@ -29,10 +29,17 @@ export default class BeerList extends React.Component{
                     console.log(beer)
                     return(
                         <div>
-                            <img src={beer.image_url} className="BeerList__imageCard"></img>
-                            <h2>{beer.name}</h2>
-                            <p>{beer.tagline}</p>
-                            <p>{beer.contributed_by}</p>
+                            <div className="BeerList__Beercard">
+                                <div>
+                                    <img src={beer.image_url} className="BeerList__Beercard__image"></img>
+                                </div>
+                                <div className="BeerList__Beercard__content">
+                                    <h2>{beer.name}</h2>
+                                    <p>{beer.tagline}</p>
+                                    <p>{beer.contributed_by}</p>
+                                </div>
+                            </div>
+                            <hr></hr>
                         </div>
                     )
                 })}
