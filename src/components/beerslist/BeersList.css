@@ -1,0 +1,40 @@
+
+.Inicio {
+    background-color: rgb(35, 204, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    margin-top: 0;
+}
+
+
+.BeerCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.BeerImg {
+    margin-left: 20px;
+    height: 160px;
+}
+
+.BeerInfo {
+    width: 60vw;
+}
+
+hr {
+    color:rgb(219, 219, 219);
+}
+
+h3 {
+    color: darkgray;
+}
+
+p {
+    font-size: small;
+}
