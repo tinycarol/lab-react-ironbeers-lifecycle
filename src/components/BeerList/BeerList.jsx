@@ -2,7 +2,7 @@ import React from "react"
 import Beer from "../Beer/Beer"
 import axios from "axios"
 import Loader from "react-loader-spinner"
-
+import Navbar from '../Navbar/Navbar'
 export default class BeerList extends React.Component {
     state = {
         beers: undefined
@@ -37,10 +37,12 @@ export default class BeerList extends React.Component {
             height = { 100}
             width = { 100}
             timeout = { 3000} //3 secs
-                />]
+                />
+            ]
         }
         return (
             <div className="BeerList">
+                <Navbar />
                 
                 {
                     this.state.beers.map(beer =>
