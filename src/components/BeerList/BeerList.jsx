@@ -1,6 +1,7 @@
 import React from "react"
 import Beer from "../Beer/Beer"
 import axios from "axios"
+import Loader from "react-loader-spinner"
 
 export default class BeerList extends React.Component {
     state = {
@@ -27,7 +28,16 @@ export default class BeerList extends React.Component {
     render(){
     //Si el state sigue siendo null será falsy, por lo tanto no será truthy y mostrará el Loading..
         if (!this.state.beers) {
-            return "Loading..."
+           
+            return [
+                "Loading...",
+                < Loader
+        type = "Puff"
+            color = "#00BFFF"
+            height = { 100}
+            width = { 100}
+            timeout = { 3000} //3 secs
+                />]
         }
         return (
             <div className="BeerList">
