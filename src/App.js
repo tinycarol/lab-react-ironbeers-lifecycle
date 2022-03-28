@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import http from './services/baseService';
 import './App.css';
 
 function App() {
@@ -7,6 +7,6 @@ function App() {
     <div className="App">
     </div>
   );
-}
+};
 
 export default App;
