@@ -1,12 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Beerslist from './components/BeersList/BeersList';
+import {getAllbeers} from './services/BeersService'
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App container">
+        <h1 className='mt-4'>BeersList</h1>
+        <Beerslist />
+      </div>
+    );
+  }
+
 }
 
 export default App;
