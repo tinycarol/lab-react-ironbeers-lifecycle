@@ -1,3 +1,15 @@
+.page_container {
+  max-width: 710px;
+  margin: 0 auto;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  gap: 20px;
+}
 .container {
   display: flex;
   align-items: center;

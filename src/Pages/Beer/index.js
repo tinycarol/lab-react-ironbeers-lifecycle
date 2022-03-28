@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Beer from './components/Beer';
+import SearchBar from './components/SearchBar';
+import styles from './components/Beer.module.css';
 
 function BeerPage() {
   const [beers, setBeers] = useState(null);
@@ -18,7 +20,8 @@ function BeerPage() {
 
   return (
     <div className="App">
-      <div>
+      <div className={styles.page_container}>
+        <SearchBar setBeers={setBeers} />
         <Beer beers={beers} />
       </div>
     </div>

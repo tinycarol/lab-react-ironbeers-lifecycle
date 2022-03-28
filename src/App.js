@@ -25,7 +25,7 @@ function App() {
         </p>
       </div>
       <div>
-        <Link to="/random-beer">
+        <Link to="/random">
           <img
             className={styles.fw_image}
             src="./images/new-beer.png"
