@@ -1,14 +1,15 @@
 import React from 'react';
 import './Navbar.css';
+import logo from '../../assets/Img/casaimagen.png'
 
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-light bg-light">
+      <nav className="navbar navbar-light bg-primary">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand fa fa-home" href="#">
             <img
-              src="https://toppng.com/uploads/preview/house-png-address-logo-for-resume-11563644318qyw00houfc.png"
+              src={logo}
               alt=""
               width="30"
               height="24"
