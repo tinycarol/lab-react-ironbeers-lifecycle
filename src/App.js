@@ -3,6 +3,7 @@ import './App.css';
 import BeerList from './components/Misc/BeerList/BeerList';
 import Navbar from './components/Misc/Navbar/Navbar';
 import { beersList } from './services/BeersService';
+import { beerDetail } from './services/BeersService';
 
 
 class App extends Component {
@@ -19,6 +20,13 @@ class App extends Component {
           })
       })
   }
+
+  logDetail = (id) => {
+    beerDetail()
+        .then(todo => console.log(todo))
+}
+
+
   render() {
 
     const {beers} = this.state
@@ -32,7 +40,7 @@ class App extends Component {
         {
         beers.map(beer => {
           return (
-            <BeerList {...beer} />
+            <BeerList {...beer } />
           )
         })}
       </div>

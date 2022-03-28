@@ -4,7 +4,7 @@ import './BeerList.css'
 const BeerList = ({name,id,image_url,tagline,contributed_by}) => {
     return (
 
-        <div className="card mb-3" >
+        <div className="card mb-3" key={id} >
             <div className="row g-0">
                 <div className="col-md-4">
                     <img src={image_url} className="img-fluid rounded-start" alt={name}/>
