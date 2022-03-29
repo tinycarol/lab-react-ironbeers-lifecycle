@@ -1,11 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import BeerList from './components/BeerList/BeerList';
+import NavBar from './components/NavBar/NavBar';
+
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <>
+      <div className="App">
+        <NavBar></NavBar>
+        <BeerList></BeerList>
+      </div>
+    </>
   );
 }
 
