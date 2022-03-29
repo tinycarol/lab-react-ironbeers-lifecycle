@@ -6,8 +6,6 @@ import { getBeers } from '../../constants';
 console.log(getBeers());
 
 const BeerList = () => {
-  const [loading, setLoading] = useState(true);
-
   const { isLoading, isError, data, error } = useQuery('beers', getBeers);
 
   if (isLoading) {
