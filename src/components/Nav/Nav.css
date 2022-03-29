@@ -1,0 +1,16 @@
+.navbar {
+  background-color: aquamarine !important;
+}
+
+#navbarNav {
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
