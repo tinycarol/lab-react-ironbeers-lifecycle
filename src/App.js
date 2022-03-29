@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { beers } from './services/BeerListService';
-/* import Beers from './components/beerList'; */
+import Beer from './components/beer/Beer';
+import Navbar from './components/misc/Navbar'
 
 class App extends Component {
   state = {
@@ -9,8 +10,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    beers()
-    .then((response) => {
+    beers().then((response) => {
       this.setState({
         beers: response,
       });
@@ -18,16 +18,19 @@ class App extends Component {
   }
 
   render() {
-    return (
-      this.state.beers ? 
+   
+    return this.state.beers ? (
       <div className="App">
-        {this.state.beers.map(beer => {
-          return (<p key={beer.id}>{beer.name}</p>
-          
-          )
+
+      <Navbar />
+        {this.state.beers.map((beer) => {
+          return (
+       <Beer key={beer.id} {...beer}/>
+          );
         })}
       </div>
-      : <h2>Loading...</h2>
+    ) : (
+      <h2>Loading...</h2>
     );
   }
 }
