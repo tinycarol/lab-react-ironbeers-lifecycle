@@ -1,12 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { beers } from './services/BeerListService';
+import Beer from './components/beer/Beer';
+import Navbar from './components/misc/Navbar'
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+class App extends Component {
+  state = {
+    beers: [],
+  };
+
+  componentDidMount() {
+    beers().then((response) => {
+      this.setState({
+        beers: response,
+      });
+    });
+  }
+
+  render() {
+   
+    return this.state.beers ? (
+      <div className="App">
+
+      <Navbar />
+        {this.state.beers.map((beer) => {
+          return (
+       <Beer key={beer.id} {...beer}/>
+          );
+        })}
+      </div>
+    ) : (
+      <h2>Loading...</h2>
+    );
+  }
 }
 
 export default App;
