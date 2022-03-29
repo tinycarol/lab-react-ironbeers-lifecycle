@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import BeersList from './components/BeerList/BeerList';
-import Loading from './components/Loading/Loading'
 import { beersList } from './services/BeerService';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
 
 class App extends Component {
   state = {
@@ -14,20 +14,24 @@ class App extends Component {
     beersList()
       .then(response => {
         this.setState({
-          beers: response,
-          loading: false
+          loading: false,
+          beers: response
         })
       })
   }
 
   render() {
     return (
+      <>
+        <Navbar />
       <div className="App">
-      {this.state.beers &&
-        <Loading /> }
+      {
+        this.state.beers &&
         <BeersList beers={this.state.beers} />
+      }
       </div>
-    );
+      </>
+    )
   }
 }
 
