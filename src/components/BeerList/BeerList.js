@@ -1,14 +1,12 @@
 import React from 'react';
 
-const BeersList = () => {
-
-  const { beers } = this.state
+const BeersList = ({ beers, id}) => {
 
   return (
       <>
         {
           beers.map(beer => {
-            return <p>{beer.name}</p>
+            return <p key={id}>{beer.name}</p>
           })
         }
         
