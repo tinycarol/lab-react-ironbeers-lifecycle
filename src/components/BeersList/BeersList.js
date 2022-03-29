@@ -1,9 +1,10 @@
 import React from "react";
+import './BeersList.scss'
 
-const BeersList = (props) => {
+const BeersList = () => {
   return (
-    <div>
-      <h1>Loading...</h1>
+    <div className="loading">
+      <h1 className="loading__text">Loading my friend...</h1>
     </div>
   )
 }
