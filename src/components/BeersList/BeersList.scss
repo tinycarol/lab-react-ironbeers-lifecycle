@@ -1,0 +1,12 @@
+@import '../../assets/styles/general.scss';
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__text {
+    font-size: 8rem;
+  }
+}
