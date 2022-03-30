@@ -21,7 +21,7 @@ class BeerList extends Component {
 
     render() {
         const { loading, beers } = this.state
-        return (
+        return ( 
             <div>
                 {loading ? (
                     <p>Loading...</p>
