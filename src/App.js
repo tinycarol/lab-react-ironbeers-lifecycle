@@ -22,6 +22,9 @@ class App extends Component {
     const beers =this.state.beers
     return (
       <div className="App">
+        <navbar>
+          <i class="fa-solid fa-house"></i>
+        </navbar>
         <BeerList beers= {beers}/>
       </div>
     );

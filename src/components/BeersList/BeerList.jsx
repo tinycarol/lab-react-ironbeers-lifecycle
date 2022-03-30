@@ -4,7 +4,8 @@ import './BeerList.scss'
 
 const BeerList = (beers) => {
     return(
-        <div>
+        <div className='BeerList'>
+            <h1>Beers List:</h1>
             {beers.beers.map( beer => {
                 return(
                     <BeerCard key={beer._id} beer={beer}/>
