@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+.beer-box {
+    display: flex;
+    padding: 30px;
+    text-align: left;
+}
+
+.beer-image {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.beer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 14px;
+    color: rgb(68, 36, 36);
+}
+
+h5, p {
+    margin: 0
+}
+
+p {
+    font-size: 11px;
+} 
