@@ -5,7 +5,7 @@ const http = axios.create({
     withCredentials: false
 })
 
-http.interceptors.response.us(
+http.interceptors.response.use(
     response=> response.data,
     error => Promise.reject(error)
 )

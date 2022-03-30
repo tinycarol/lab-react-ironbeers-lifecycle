@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
+import BeerCard from '../BeerCard/BeerCard'
 import './BeerList.scss'
 
-const BeerList = () => {
-    const [value, setValue] = useState('Loading...')
-
+const BeerList = (beers) => {
     return(
         <div>
-            <p>{value}</p>
+            {beers.beers.map( beer => {
+                return(
+                    <BeerCard key={beer._id} beer={beer}/>
+                )
+            })}
         </div>
     )
 }
