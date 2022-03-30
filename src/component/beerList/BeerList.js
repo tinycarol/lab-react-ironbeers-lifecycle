@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {getBeers} from '../../services/BeersService';
+import {getBeers} from '../../service/BeersService';
 import './BeerList.css';
 
 export default function BeerList() {

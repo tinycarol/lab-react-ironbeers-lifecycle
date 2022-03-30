@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import BeerList from './Componentes/beerList/BeerList';
+import BeerList from './component/beerList/BeerList';
 
 function App() {
   return (
