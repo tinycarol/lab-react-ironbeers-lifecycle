@@ -21,10 +21,15 @@ class BeerList extends Component {
 
     render() {
         const { loading, beers } = this.state
-        return ( 
+        return (
             <div>
                 {loading ? (
-                    <p>Loading...</p>
+                    <div className='d-flex justify-content-center align-items-center' style={{ height: 100}}>
+                        <div className="spinner-border text-info" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+
                 ) : (
                     <div className='container-fluid mt-2'>
                         <div className='d-flex flex-column justify-content-center'>
@@ -58,4 +63,3 @@ class BeerList extends Component {
 }
 export default BeerList
 
-  
