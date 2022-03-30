@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import BeerList from './components/BeersList/BeerList';
 
 function App() {
   return (
     <div className="App">
+      <BeerList/>
     </div>
   );
 }
