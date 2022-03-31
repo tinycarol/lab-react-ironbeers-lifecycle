@@ -1,5 +1,6 @@
 import http from "./baseService";
 
 export const listBeers = () => {
-    http.get("https://ih-beers-api2.herokuapp.com/beers")
+    return http.get("https://ih-beers-api2.herokuapp.com/beers")
 };
+

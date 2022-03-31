@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const http = axios.create({
     basicURL: "https://ih-beers-api2.herokuapp.com/beers",
-    withCredentials: true
+    withCredentials: false
 });
 
 http.interceptors.response.use(

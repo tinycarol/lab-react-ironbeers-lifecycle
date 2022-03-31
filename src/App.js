@@ -1,10 +1,11 @@
 import React from 'react';
-import http from './services/baseService';
+import BeersList from './components/BeersList/BeersList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <BeersList />
     </div>
   );
 };
