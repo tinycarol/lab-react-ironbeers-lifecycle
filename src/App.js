@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import BeersList from './components/BeersList/BeersList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <BeersList />
     </div>
   );
-}
+};
 
 export default App;
