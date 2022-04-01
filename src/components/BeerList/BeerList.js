@@ -1,8 +1,6 @@
 import React from 'react';
 import Beer from '../Beer/Beer';
 const BeersList = ({ beers }) => {
-  // const [loading, setLoading] = useState(true)
-
 
   return (
       <>

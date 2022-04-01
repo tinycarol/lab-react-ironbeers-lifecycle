@@ -1,5 +1,5 @@
 import React from "react";
-import home from '../../images/home.png'
+import home from '../../images/home-img.png'
 import './Navbar.css'
 
 const Navbar = () => {

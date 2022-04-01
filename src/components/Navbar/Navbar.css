@@ -1,8 +1,21 @@
 .navbar {
-  background-color: #005A9C;
-  height: 30px;
+  background-color: #54b3f9;
+  height: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .home-icon {
-  width: 10px;
+  display: flex;
+  align-content: center;
+  width: 30px;
+  margin-top: 10px;
+
 }
+
+.container {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+

@@ -4,23 +4,23 @@ import './Beer.css'
 const Beer = ({ name, image, tagline, id }) => {
   return (
     <>
-      <div className="container">
+      <div key={id} className="container">
 
-      <div key={id}>
+      <div className="card-container">
       <img className="beer-img" src={image} alt={name}/>
       </div>
 
-      <div>
+      <div className="text-card">
         <h2>{name}</h2>
-        <p>{tagline}</p>
-        <p>
+        <h4>{tagline}</h4>
+        <h6>
         <strong>
         Contributed by: <small>{name}</small>
         </strong>
-        </p>
+        </h6>
       </div>
       </div>
-
+      <hr/>
 
     </>
   )
