@@ -1,0 +1,22 @@
+.Beer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    height: 170px;
+    width: 350px;
+    padding: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+}
+
+.Beer-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 250px;
+    text-align: start;
+}
