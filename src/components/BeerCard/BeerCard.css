@@ -1,0 +1,22 @@
+h2 p {
+  margin: 0;
+}
+
+.BeerCard {
+  max-width: 400px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.BeerCard__img {
+  max-height: 150px;
+  margin: 5px ;
+}
+
+.BeerCard__text {
+  max-height: 200px;
+  margin-left: 5px;
+  text-align: center;
+}
