@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+
+.app-beers-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
