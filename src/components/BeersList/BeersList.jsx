@@ -8,11 +8,18 @@ export default class BeersList extends Component {
     const {name, image_url, tagline, contributed_by  } = this.props;
     return (
       <div className="Beer-container">
-        <img height={150} src={image_url} alt="beer"></img>
+        <div className="div-img">
+          <img height={150} src={image_url} alt="beer"></img>
+        </div>
         <div className="Beer-info-container">
-            <h2>{name}</h2>
-            <p>{tagline}</p> 
-            <strong>Created by: {contributed_by}</strong>
+          <h3>{name}</h3>
+          <p>{tagline}</p>
+          <strong>
+            Created by:{' '}
+            {contributed_by
+              .replace('<samjbmason>', '')
+              .replace('<AliSkinner>', '')}
+          </strong>
         </div>
       </div>
     );

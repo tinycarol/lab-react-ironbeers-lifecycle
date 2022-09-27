@@ -24,6 +24,9 @@ class App extends Component {
 
     return (
       <div className="App">
+        <nav>
+          <img src="/home-logo.png" alt="logo" width={35}></img>
+        </nav>
         <div className="BeerList-container">
           {beers.length > 0
             ? beers.map((beer) => {
