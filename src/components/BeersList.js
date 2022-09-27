@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { fetchBeers } from '../services/BeerServices';
+import './BeerList.css'
 
 class BeerList extends Component {
   constructor(props) {
     super(props);
     this.state = {
       beers: [],
-      title: 'This is my table',
       loading: true,
     };
   }
@@ -33,16 +33,28 @@ class BeerList extends Component {
         <ul>
           {this.state.loading
             ? 'Loading...'
-            : this.state.beers.map(({_id, name, image_url, tagline, contributed_by}) => {
-                return (
-                  <div>
-                    <li key={_id}>{name} </li>
-                    <img src={image_url} alt={name} />
-                    <small>{tagline}</small>
-                    <p><stong>{contributed_by}</stong></p>
-                  </div>
-                );
-              })}
+            : this.state.beers.map(
+                ({ _id, name, image_url, tagline, contributed_by }) => {
+                  return (
+                    <div className='Beer-container'>
+                      
+                      <div className='Beer-img'>
+                        <img src={image_url} alt={name} />
+                      </div>
+                      
+                      <div className='Beer-info'>
+                        <li key={_id}>{name} </li>
+                        <p className='Beer-tag'>{tagline}</p>
+                        <p className='Beer-created'>
+                        <strong>Created by:</strong> {' '} 
+                        {contributed_by.replace('<samjbmason>', '').replace('<AliSkinner>', '') }
+                        </p>
+                      </div>
+
+                    </div>
+                  );
+                }
+              )}
         </ul>
       </div>
     );
@@ -50,3 +62,5 @@ class BeerList extends Component {
 }
 
 export default BeerList;
+
+
