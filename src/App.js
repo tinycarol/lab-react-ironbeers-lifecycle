@@ -1,10 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ListBeer from './components/ListBeer/ListBeer';
+import Navbar from './components/misc/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
+
+    <Navbar />
+    <ListBeer />
+
     </div>
   );
 }
