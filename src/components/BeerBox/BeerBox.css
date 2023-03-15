@@ -1,0 +1,17 @@
+.BeerBox {
+    display: flex;
+    border: 1px solid grey;
+    width: 600px;
+    justify-content: space-around;
+    padding: 24px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.BeerBox img {
+    width: 50px;
+}
+
+.DataBeer {
+    width: 300px;
+}
