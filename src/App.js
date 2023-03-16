@@ -1,10 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import { BeersList } from './components/BeersList';
+import { Nav } from './components/nav';
 
 function App() {
   return (
     <div className="App">
+    <Nav/>
+    <BeersList/>
     </div>
   );
 }
