@@ -8,7 +8,7 @@ export const Beer = ({image_url, name, tagline, contributed_by}) => {
     </div>
     <div className="content"> 
     <h3>{name}</h3>
-    <h4>{tagline}</h4>
+    <h5>{tagline}</h5>
     <p><b>Created by:</b> {contributed_by}</p>
     </div>
    
