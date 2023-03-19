@@ -1,0 +1,11 @@
+.beerdiv {
+    border-bottom: 2px solid lightgray;
+    width: 600px;
+}
+
+.beersList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
