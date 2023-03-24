@@ -7,6 +7,7 @@ import { Nav } from './views/nav';
 import { Home } from './views/Home';
 import { BeerDetail } from './views/BeerDetail';
 import { RamdonBeer } from './views/RamdonBeer';
+import { NewBeer } from './views/NewBeer';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="beers" element={<BeersList />} />
     <Route path="beers/:beerId" element={<BeerDetail />} />
-    <Route path='/beers/random-beer' element={<RamdonBeer />}/>
+    <Route path='/random-beer' element={<RamdonBeer />}/>
+    <Route path='/new-beer' element={<NewBeer />}/>
     </Routes>
     </div>
   );

@@ -23,7 +23,7 @@ export const Home = () => {
          </Link>
         </div>
         <div className='home-card'>
-        <Link to="/beers/random-beer" style={{ color: "black", textDecoration: 'none' }}>
+        <Link to="/random-beer" style={{ color: "black", textDecoration: 'none' }}>
         <img src={RamdonImage} alt="ramdon" />
         <h3>Ramdon Beer</h3>
         
