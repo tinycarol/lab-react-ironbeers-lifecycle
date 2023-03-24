@@ -1,6 +1,7 @@
 import "./index.css"
 import React from "react"
-export const Beer = ({image_url, name, tagline, contributed_by}) => {
+export const Beer = ({image_url, name, tagline, contributed_by }) => {
+  console.log(name);
   return (
     <div className='beer'>
     <div className="image">
