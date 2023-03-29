@@ -1,0 +1,13 @@
+.navbar{
+    background-color: rgb(69, 128, 196);
+
+}
+
+.classCasita {
+    width: 80px;
+    height: 80px;
+    margin-left: 700px;
+    padding-top: 5px;
+    position: relative;
+    display: flex;
+}
